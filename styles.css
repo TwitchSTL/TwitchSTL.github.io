@@ -12,31 +12,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .orbit {
     position: absolute;
     border: 2px dotted white;
     border-radius: 50%;
-    animation: rotate 20s linear infinite;
+    animation: rotate linear infinite;
 }
 
 .orbit1 {
     width: 200px;
     height: 200px;
+    animation-duration: 10s;
 }
 
 .orbit2 {
     width: 400px;
     height: 400px;
-    animation-duration: 25s;  /* Slower rotation for a larger orbit */
+    animation-duration: 20s;
 }
 
 .orbit3 {
     width: 600px;
     height: 600px;
-    animation-duration: 30s;  /* Even slower rotation for the largest orbit */
+    animation-duration: 30s;
 }
 
 .logo-link {
