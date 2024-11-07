@@ -17,11 +17,26 @@ body {
 
 .orbit {
     position: absolute;
-    width: 200px;
-    height: 200px;
     border: 2px dotted white;
     border-radius: 50%;
-    animation: rotate 10s linear infinite;
+    animation: rotate 20s linear infinite;
+}
+
+.orbit1 {
+    width: 200px;
+    height: 200px;
+}
+
+.orbit2 {
+    width: 400px;
+    height: 400px;
+    animation-duration: 25s;  /* Slower rotation for a larger orbit */
+}
+
+.orbit3 {
+    width: 600px;
+    height: 600px;
+    animation-duration: 30s;  /* Even slower rotation for the largest orbit */
 }
 
 .logo-link {
@@ -39,31 +54,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
-/* For the rotating 0s and 1s as stars */
-@keyframes starTwinkle {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.3;
-    }
-}
-.star {
-    position: absolute;
-    color: white;
-    font-size: 10px;
-    animation: starTwinkle 2s infinite alternate;
-}
-
-.star1 {
-    top: 30%;
-    left: 20%;
-    animation-duration: 3s;
-}
-.star2 {
-    top: 50%;
-    left: 50%;
-    animation-duration: 4s;
-}
-/* Add more stars as needed */
