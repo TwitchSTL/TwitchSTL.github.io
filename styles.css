@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: black;
     color: white;
+    perspective: 1000px;  /* Add perspective for 3D effect */
 }
 
 .content {
@@ -22,4 +23,5 @@ body {
     background: rgba(255, 255, 255, 0.2);
     pointer-events: none;
     mix-blend-mode: screen;
+    transition: transform 0.5s ease-out;
 }
