@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+
+.universe {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.orbit {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px dotted white;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* For the rotating 0s and 1s as stars */
+@keyframes starTwinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+.star {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    animation: starTwinkle 2s infinite alternate;
+}
+
+.star1 {
+    top: 30%;
+    left: 20%;
+    animation-duration: 3s;
+}
+.star2 {
+    top: 50%;
+    left: 50%;
+    animation-duration: 4s;
+}
+/* Add more stars as needed */
